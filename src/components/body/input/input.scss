@@ -1,0 +1,56 @@
+.basic-element {
+  width: 250px;
+  padding: 8px;
+  font-family: inherit;
+ 
+
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+@media screen and (max-width:560px) {
+  flex-direction:column;
+  justify-content: flex-start;
+}
+  &-text {
+    margin: 12px;
+display:flex;
+    &>input {
+@extend .basic-element;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+      border: none;
+      outine: none;
+      font-family: inherit;
+      color: inherit;
+      background-color: inherit;
+      &:hover {
+        outline: none;
+      }
+
+    }
+
+    &>span {
+      @extend .basic-element;
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+width:20px;
+
+    }
+  }
+
+  &-select {
+    margin: 12px;
+      color:inherit;
+      background-color: inherit;
+    &>select{
+      @extend .basic-element;
+      border:none;
+      outline:none;
+      color:inherit;
+      background-color: inherit;
+    }
+  }
+
+}

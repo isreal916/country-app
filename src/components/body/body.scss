@@ -1,0 +1,15 @@
+.section-container{
+  background-color:var(--dark-mode-background-very-dark-blue) ;
+  // max-height:100vh;
+  height:fit-content;
+  
+}
+.section-description{
+  display:flex;
+  width:100%;
+  flex-wrap: wrap;
+  @media screen and (max-width:560px) {
+    justify-content: center;
+
+  }
+}
