@@ -19,9 +19,13 @@
   align-items:center;
   justify-content: space-between;
   &-brand{
+    flex-shrink:0;
+    @media screen and (max-width:560px) {
+      font-size:14px;
+    }
   }
   &-utils{
-    
+    font-size:14px;
     margin-right: 30px;
 
   }
