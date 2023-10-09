@@ -1,33 +1,38 @@
 .description-card {
   width: 300px;
-  margin:10px;
+  margin: 10px;
   height: 400px;
   font-family: var(--font);
   color: var(--dark-mode-text);
   background-color: var(--dark-mode-element--dark-blue);
-  
-&>*{
-  display:flex;
-  margin-bottom: -25px;
-  flex-wrap: wrap;
-  &>p{
-    margin-top:22px;
-    padding-left:5px
+
+  &>*:not(.description-card-flag) {
+    display: flex;
+    margin-bottom: -25px;
+    flex-wrap: wrap;
+    margin-left: 20px;
+
+    &>p {
+      margin-top: 22px;
+      padding-left: 5px
+    }
   }
-}
+
   &-flag {
     &>img {
       width: 100%;
-      height:200px;
-      margin-bottom:12px;
+      height: 200px;
+      margin-bottom: 12px;
 
     }
   }
-  &-population{
-    display:flex;
+
+  &-population {
+    display: flex;
   }
 }
-a{
+
+a {
   text-decoration: none;
 
 }

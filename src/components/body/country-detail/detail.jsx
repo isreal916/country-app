@@ -37,7 +37,6 @@ export default function Details() {
             });
          return html;
           }
-          getcountryName("USA")
           const languageArray = [];
           const currencyArray =[];
           for (const key in data.currencies) {
