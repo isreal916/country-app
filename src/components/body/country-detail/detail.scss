@@ -64,7 +64,6 @@
       height: 70%;
       color: inherit;
       font-family: var(--font);
-
       flex-direction: column;
 
       .border-details {
@@ -73,7 +72,7 @@
         width: 100%;
         height: 40%;
         @media screen and (max-width:560px) {
-          // flex-direction: column ;
+          flex-direction: column ;
           
 
         }
@@ -81,11 +80,12 @@
         .border-button {
           display: flex;
           // border: 2px solid white;
-          // flex-wrap: wrap;
+          flex-wrap: wrap;
           width: 400px;
 
           @media screen and (max-width:560px) {
-             margin-top: -30px;
+             margin-top: 55px;
+             margin-left:-200px;
             width: 200px
           }
         }
